@@ -1,0 +1,71 @@
+<ion-view hide-nav-bar="true">
+    <ion-content scroll="false" class="telecommande">
+
+        <div class="item item-icon-left nav" ng-click="telecommande.myGoBack()">
+            <i class="icon left ion-android-arrow-back"></i>
+        </div>
+        
+        <div class="bloc-photo">
+            <img src="img/pharrel2l.jpg">
+        </div>
+
+        <div class="bloc-video">
+            <div class="titre">
+                <p>videos</p>
+            </div>
+
+            <div class="video" ng-click="telecommande.displayVideo(1)">       
+                <img src="img/topten.jpg">         
+                <div>
+                    <p>top ten</p>
+                </div>
+            </div>
+
+            <div class="video" ng-click="telecommande.displayVideo(2)">
+                <img src="img/superstar.jpg">
+                <div>
+                    <p>superstar</p>
+                </div>
+            </div>
+            <div class="video" ng-click="telecommande.displayVideo(3)">
+                <img src="img/stanpharell.jpg">
+                <div>
+                    <p>stan smith pharrell</p>
+                </div>
+            </div>
+            <div class="video" ng-click="telecommande.displayVideo(4)">
+                <img src="img/stanoriginale.jpg">
+                <div>
+                    <p>stan smith originales</p>
+                </div>
+            </div>
+        </div>
+<!--
+        <ul class="bloc-video">
+            <li class="titre">
+                <p>videos</p>
+            </li>
+            <li class="video topten">
+                <div>
+                    <p>top ten</p>
+                </div>
+            </li>
+            <li class="video superstar">
+                <div>
+                     <p>superstar</p>
+                </div>               
+            </li>
+            <li class="video stanpharrell">
+                <div>
+                    <p>stan smith pharrell</p>
+                </div>
+            </li>
+            <li class="video stanoriginale">
+                <div>
+                    <p>stan smith originales</p>
+                </div>
+            </li>
+        </ul>
+-->
+    </ion-content>
+</ion-view>

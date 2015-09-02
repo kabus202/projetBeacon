@@ -1,0 +1,31 @@
+[
+  {
+    "id"      : 1,
+    "name"    : "Beacon purple",
+    "UUID"    : "b9407f30-f5f8-466e-aff9-25556b57fe6d",
+    "major"   : 19792,
+    "minor"   : 19502,
+    "color"   : "purple"
+  },
+  {
+    "id"      : 2,
+    "name"    : "Beacon green",
+    "UUID"    : "b9407f30-f5f8-466e-aff9-25556b57fe6d",
+    "major"   : 37348,
+    "minor"   : 52788,
+    "color"   : "green"
+  },
+  {
+    "id"      : 3,
+    "name"    : "Beacon blue",
+    "UUID"    : "b9407f30-f5f8-466e-aff9-25556b57fe6d",
+    "major"   : 58989,
+    "minor"   : 9595,
+    "color"   : "blue"
+  },
+  {
+    "id"      : 4,
+    "name"    : "BLE Device",
+    "UUID"    : "87ba678b-a958-4681-8bb4-e0a181e50810"
+  }
+]

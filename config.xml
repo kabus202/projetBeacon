@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<widget id="com.ionicframework.projetbeacon383535" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ProjetBeacon</name>
+    <description>
+        An Ionic Framework and Cordova project.
+    </description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
+        Ionic Framework Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+    <platform name="ios">
+        <icon src="icons/ios/Icon-60.png" width="60" height="60" />
+        <icon src="icons/ios/Icon-72.png" width="72" height="72" />
+        <icon src="icons/ios/Icon-72@2x.png" width="144" height="144" />
+        <icon src="icons/ios/Icon.png" width="57" height="57" />
+        <icon src="icons/ios/Icon@2x.png" width="114" height="114" />
+        <icon src="icons/ios/Icon-Small-50.png" width="50" height="50" />
+        <icon src="icons/ios/Icon-Small-50@2x.png" width="100" height="100" />
+    </platform>
+    <platform name="android">
+        <icon src="icons/android/drawable-ldpi/ic_launcher.png" density="ldpi" />
+        <icon src="icons/android/drawable-mdpi/ic_launcher.png" density="mdpi" />
+        <icon src="icons/android/drawable-hdpi/ic_launcher.png" density="hdpi" />
+        <icon src="icons/android/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+        <icon src="icons/android/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" />
+        <icon src="icons/android/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+    </platform>
+</widget>

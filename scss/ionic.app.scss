@@ -1,0 +1,408 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+/* Empty. Add your own CSS if you like */
+/* VARIABLES COULEURS */
+
+$vert-clair: #37a96d;
+$blanc: #ffffff;
+/* ****************** */
+
+@font-face {
+    font-family: 'adineue';
+    src: url('../font/adineue-bold-webfont.eot');
+    src: url('../font/adineue-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+    url('../font/adineue-bold-webfont.woff') format('woff'), 
+    url('../font/adineue-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flou3 {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+
+    -webkit-transition: filter 1s linear;
+    -moz-transition: filter 1s linear;
+    -ms-transition: filter 1s linear;
+    -o-transition: filter 1s linear;
+    transition: filter 1s linear;
+}
+
+.flou6 {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+
+    -webkit-transition: filter 1s linear;
+    -moz-transition: filter 1s linear;
+    -ms-transition: filter 1s linear;
+    -o-transition: filter 1s linear;
+    transition: filter 1s linear;
+}
+
+body {
+    font-family: 'adineue';
+}
+
+.menu-bg * {
+    font-size: 22px;
+    color: $blanc;
+    background-color: $vert-clair;
+    .icone {
+        margin-top: 8px;
+        width: 32px;
+        height: 32px;
+    }
+    a.item {
+        .home {
+            @extend .icone;
+            background: url("../img/icones/home.png");
+            background-size: cover;
+        }
+        .scenario {
+            @extend .icone;
+            background: url("../img/icones/scenario.png");
+            background-size: cover;
+        }
+        .parametres {
+            @extend .icone;
+            background: url("../img/icones/parametres.png");
+            background-size: cover;
+        }
+        .apropos {
+            @extend .icone;
+            background: url("../img/icones/apropos.png");
+            background-size: cover;
+        }
+    }
+    a.item:active, a.item:focus {
+        background-color: $blanc;
+        color: $vert-clair;
+        .home {
+            @extend .icone;
+            background: url("../img/icones/home2.png");
+            background-size: cover;
+        }
+        .scenario {
+            @extend .icone;
+            background: url("../img/icones/scenario2.png");
+            background-size: cover;
+        }
+        .parametres {
+            @extend .icone;
+            background: url("../img/icones/parametres2.png");
+            background-size: cover;
+        }
+        .apropos {
+            @extend .icone;
+            background: url("../img/icones/apropos2.png");
+            background-size: cover;
+        }
+    }
+    .menu-adidas {
+        width: 100%;
+        height: 100%;
+    }
+    .bloc-logo {
+        width: 100%;
+        height: 100%;
+        .menu-logo {
+            height: auto;
+            width: 40%;
+            margin: 10% 0 0 10%;
+        }
+        .menu-bande {
+            position: absolute;
+            bottom: 0;
+            width: 60%;
+        }
+    }
+}
+
+.accueil {
+    width: 100%;
+    height: 100%;
+    div.nav {
+        position: absolute;
+        top: 10px;
+        height: auto;
+        i.ion-navicon {
+            color: $vert-clair;
+        }
+    }
+    .item {
+        border-color: initial;
+        background-color: initial;
+        color: initial;
+        border-style: initial;
+    }
+    div.scroll {
+        width: 100%;
+        height: 100%;
+    }
+    .img-accueil {
+        background-image: url("../img/accueil.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        .loader {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            svg {
+                width: 60px;
+                height: 60px;
+                stroke: $vert-clair;
+            } 
+        }
+    }   
+}
+
+.produit { 
+    background-color: $vert-clair;
+    div.nav {
+        position: absolute;
+        top: 10px;
+        height: auto;
+        i.ion-android-arrow-back {
+            color: $vert-clair;
+        }
+    }
+    .item {
+        border-color: initial;
+        background-color: initial;
+        color: initial;
+        border-style: initial;
+    }
+    .photo {
+        position: relative;
+        background-color: $stable;
+        text-align: center;
+        img {
+            width: 70%;
+        }
+        i.ion-chevron-left {
+            position: absolute;
+            left: 10px;
+            top: 40%;
+            font-size: 34px;
+            color: $vert-clair;
+        }
+        i.ion-chevron-right {
+            position: absolute;
+            right: 10px;
+            top: 40%;
+            font-size: 34px;
+            color: $vert-clair;
+        }
+    }
+    .description {
+        position: relative;
+        background-color: $blanc;
+        color: $vert-clair;
+        margin-top: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        div.bloc-titre {
+            text-align: center;
+            div {
+                display: inline-block;
+                p {
+                    font-size: 18px;
+                    margin: 0;
+                    text-align: right;
+                }
+            }
+        }
+        ul {
+            margin-top: 10px;
+            margin-left: 20px;
+            list-style-type: disc;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .btn-taille {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 25%;
+            width: 35%;
+            background-color: $vert-clair;
+            font-family: adineue;
+            color: $blanc;
+            font-size: 24px;
+            border-radius: 0px;
+            border-color: $vert-clair;
+        }
+    }
+    div.acheter {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+
+        display: flex;
+        a.btn-acheter {
+            color: $blanc;
+            width: 100%;
+            font-size: 36px; 
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            justify-content: center; 
+            .panier {              
+                width: 42px;
+                height: 42px;
+                vertical-align: middle;
+                display: inline-block;
+                background: url("../img/icones/panier.png");
+                background-size: cover;
+            }
+        } 
+    }   
+}
+
+.telecommande {
+    background-color: $vert-clair;
+    text-align: center;
+    .item {
+        border-color: initial;
+        background-color: initial;
+        color: initial;
+        border-style: initial;
+    }
+    div.nav {
+        position: absolute;
+        top: 10px;
+        height: auto;
+        i.ion-android-arrow-back {
+            color: $blanc;
+        }
+    }
+    div.scroll {
+        height: 100%;
+    }
+    div.bloc-photo {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        img {
+            width: 100%;
+        }
+    }
+    
+    div.bloc-video {
+        position: absolute;
+        bottom: 0;
+        div.titre {
+            text-align: right;
+            p {
+                padding: 5px 10px 5px 5px;
+                color: $blanc;
+                font-size: 50px;
+            }
+        }
+        div.video {
+            position: relative;
+            background-color: $vert-clair;
+            margin-bottom: -7px;
+            img {
+                width: 100%;
+            }
+            img:hover {
+                width: 100%;
+                background: url("../img/topten_2.jpg");
+            }
+            div {
+                position: absolute;
+                top: 35%;
+                left: 0;
+                width: 100%;
+                p {
+                    color: $blanc;
+                    font-size: 32px;
+                }
+            }
+        }
+        div+div,
+        div+div+div,
+        div+div+div+div {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.parametres {
+    padding: 0px;
+    div.nav {
+        position: absolute;
+        top: 11px;
+        height: auto;
+        i.ion-navicon {
+            color: $vert-clair;
+        }
+    }
+    div.item {
+        border-color: initial;
+        background-color: initial;
+        color: initial;
+        border-style: initial;
+    }
+    form {
+        padding-top: 55px;
+    }
+}
+
+.apropos {
+    div.nav {
+        position: absolute;
+        top: 10px;
+        height: auto;
+        i.ion-navicon {
+            color: $vert-clair;
+        }
+    }
+    .item {
+        border-color: initial;
+        background-color: initial;
+        color: initial;
+        border-style: initial;
+    }
+}
+
+.tabs {
+    background-color: $vert-clair !important;
+    color: $blanc !important;
+    span.tab-title {
+        font-size: 25px !important;
+    }
+}
+.tab-content {
+    span.input-label {
+        width: inherit !important;
+    }
+    .align-right {
+        text-align: right !important;
+    }
+}
+
+
+
+
+
+    

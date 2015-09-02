@@ -1,0 +1,66 @@
+[
+    {
+        "scenario": 1,
+        "beacon": 
+        [
+            {
+                "id": 1,
+                "name"    : "Beacon purple",
+                "action": "produit",
+                "produit": 1
+            }, {
+                "id": 2,
+                "name"    : "Beacon green",
+                "action": "produit",
+                "produit": 2
+            }, {
+                "id": 3,
+                "name"    : "Beacon blue",
+                "action": "promo",
+                "produit": 3
+            }
+        ]
+    }, {
+        "scenario": 2,
+        "beacon": 
+        [
+            {
+                "id": 1,
+                "name"    : "Beacon purple",
+                "action": "tv",
+                "produit": 0
+            }, {
+                "id": 2,
+                "name"    : "Beacon green",
+                "action": "produit",
+                "produit": 0
+            }, {
+                "id": 3,
+                "name"    : "Beacon blue",
+                "action": "telecommande",
+                "produit": 0
+            }
+        ]
+    }, {
+        "scenario": 3,
+        "beacon": 
+        [
+            {
+                "id": 1,
+                "name"    : "Beacon purple",
+                "action": "telecommande",
+                "produit": 0
+            }, {
+                "id": 2,
+                "name"    : "Beacon green",
+                "action": "aucune",
+                "produit": 0
+            }, {
+                "id": 3,
+                "name"    : "Beacon blue",
+                "action": "produit",
+                "produit": 0
+            }
+        ]
+    }
+]

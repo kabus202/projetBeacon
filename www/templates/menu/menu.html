@@ -1,0 +1,48 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+
+        <ion-nav-bar>
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+    
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" class="menu-bg">
+        <ion-content scroll="false">
+            <ion-list>
+                <i class="item">
+                    <img class="menu-adidas" src="img/adidas.png">
+                </i>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.accueil" ng-click="menu.alterScenario(0)">
+                    <i class="icon left home"></i> accueil
+                </a>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.accueil" ng-click="menu.alterScenario(1)">
+                    <i class="icon left scenario"></i>scénario 1
+                </a>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.accueil" ng-click="menu.alterScenario(2)">
+                    <i class="icon left scenario"></i>scénario 2
+                </a>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.accueil" ng-click="menu.alterScenario(3)">
+                    <i class="icon left scenario"></i>scénario 3
+                </a>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.parametres" ng-click="menu.alterScenario(0)">
+                    <i class="icon left parametres"></i>paramètres
+                </a>
+                <a class="item item-icon-left" nav-clear menu-close ui-sref="app.apropos" ng-click="menu.alterScenario(0)">
+                    <i class="icon left apropos"></i>à propos
+                </a>
+            </ion-list>
+            <div class="bloc-logo">
+                <img class="menu-logo" src="img/logo_adidas.png">
+                <img class="menu-bande" src="img/bandes.png">
+            </div>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>

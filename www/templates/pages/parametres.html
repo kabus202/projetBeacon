@@ -1,0 +1,61 @@
+<ion-view hide-nav-bar="true">
+    <ion-tabs>
+        <ion-tab title="devices">
+            <ion-nav-view name="tab-devices">
+                <ion-content class="parametres padding">
+                    <div class="item item-icon-left nav" ng-click="parametres.toggleLeftSideMenu()">
+                        <i class="icon left ion-navicon"></i>
+                    </div>
+                    <form name="beaconForm">
+                        <label class="item item-input item-select">
+                            <div class="input-label">device</div>
+                            <select ng-model="parametres.myBeacon" ng-options="beacon.name for beacon in parametres.beacons">
+                            </select>
+                        </label>
+                        <label class="item item-input" ng-model="parametres.myBeacon.id" ng-show="false">{{parametres.myBeacon.id}}</label>
+                        <label class="item item-input item-stacked-label" ng-show="parametres.myBeacon.UUID"> <span class="input-label">uuid</span>
+                            <input type="text" ng-model="parametres.myBeacon.UUID" ng-blur="parametres.saveBeacons(parametres.myBeacon)">
+                        </label>
+                        <label class="item item-input item-stacked-label" ng-show="parametres.myBeacon.major"><span class="input-label">major</span>
+                            <input type="text" ng-model="parametres.myBeacon.major" ng-blur="parametres.saveBeacons(parametres.myBeacon)">
+                        </label>
+                        <label class="item item-input item-stacked-label" ng-show="parametres.myBeacon.minor"><span class="input-label">minor</span>
+                            <input type="text" ng-model="parametres.myBeacon.minor" ng-blur="parametres.saveBeacons(parametres.myBeacon)">
+                        </label>
+                        <label class="item item-input item-stacked-label" ng-show="parametres.myBeacon.color"><span class="input-label">color</span>
+                            <input type="text" ng-model="parametres.myBeacon.color" ng-blur="parametres.saveBeacons(parametres.myBeacon)">
+                        </label>
+                    </form>
+                    <!--<button ng-click="parametres.videCache()">vider cache</button>-->
+                </ion-content>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="scenarios">
+            <ion-nav-view name="tab-scenarios">
+                <ion-content class="parametres padding">
+                    <div class="item item-icon-left nav" ng-click="parametres.toggleLeftSideMenu()">
+                        <i class="icon left ion-navicon"></i>
+                    </div>
+                    <form name="scenarioForm">
+                        <label class="item item-input item-select">
+                            <div class="input-label">scenario</div>
+                            <select ng-model="parametres.myScenario" ng-options="scenario.scenario for scenario in parametres.scenarios">
+                            </select>
+                        </label>
+                        <label class="item item-input" ng-model="parametres.myScenario.id" ng-show="false">{{parametres.myScenario.scenario}}</label>
+                        <label class="item item-input item-select" ng-show="parametres.myScenario.beacon">
+                            <div class="input-label">beacon</div>
+                            <select ng-model="parametres.myScenario.mybeacon" ng-options="beacon.name for beacon in parametres.myScenario.beacon">
+                            </select>
+                        </label>
+                        <label class="item item-input" ng-model="parametres.myScenario.mybeacon.id" ng-show="false">{{beacon.id}}</label>
+                        <label class="item item-input item-stacked-label" ng-show="parametres.myScenario.mybeacon.action"><span class="input-label">action</span>
+                            <input type="text" ng-model="parametres.myScenario.mybeacon.action" ng-blur="parametres.saveScenarios(parametres.myScenario)">
+                        </label>
+                    </form>
+                    <!--<button ng-click="parametres.videCache()">vider cache</button>-->
+                </ion-content>
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>
